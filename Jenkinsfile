@@ -1,14 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage 
-            steps ('build th app'){
+
+        stage('build th app'){ 
+            steps {
             sh 'mvn clean '
              echo 'Test for Tah'
                 
             }
         }
     }
-
-       
-        
+}
